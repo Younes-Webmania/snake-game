@@ -6,22 +6,25 @@
     <title>Snake</title>
     <script defer src="./script.js"></script>
     <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
       * {
         box-sizing: border-box;
+      }
+
+      div {
+        scale: 0.6;
       }
     </style>
   </head>
   <body>
-    <div
-      style="
-        margin: 0 auto;
-        width: 1200px;
-        display: flex;
-        justify-content: center;
-      "
-    >
+    <div style="width: 1200px">
       <canvas
-        style="border: 5px solid red; width: 900px; height: 800px"
+        style="border: 5px solid red; width: 1000px; height: 900px"
         id="canvas"
       ></canvas>
     </div>
